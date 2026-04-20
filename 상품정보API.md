@@ -49,7 +49,7 @@
 ### 요청 헤더 예시
 
 ```http
-GET https://kicoebiz.net/api/goods/getGoodsInfo?gid=1&pageSize=20&pageNum=0 HTTP/1.1
+GET /goods/getGoodsInfo?gid=1&pageSize=20&pageNum=0 HTTP/1.1
 Host: https://kicoebiz.net/api
 x-api-key: 발급된 API key
 Accept: */*
