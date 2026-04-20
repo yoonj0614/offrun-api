@@ -30,7 +30,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| Base URL (운영) | `https://<운영 도메인>` |
+| Base URL (운영) | `[https://<운영 도메인>](https://kicoebiz.net/api)` |
 | 프로토콜 | HTTP / HTTPS |
 | 데이터 형식 | JSON (UTF-8) |
 | 문자 인코딩 | UTF-8 |
@@ -50,7 +50,7 @@
 
 ```http
 GET /order/getOrderInfo?mid=26&oid=7612 HTTP/1.1
-Host: localhost:8082
+Host: https://kicoebiz.net/api
 x-api-key: 발급된 API key
 Accept: */*
 ```
@@ -101,14 +101,14 @@ Accept: */*
 #### 요청 예시 (cURL)
 
 ```bash
-curl -X GET "http://localhost:8082/order/getOrderInfo?mid=26&oid=7612" \
+curl -X GET "https://kicoebiz.net/api/order/getOrderInfo?mid=26&oid=7612" \
   -H "x-api-key: 발급된 API key"
 ```
 
 #### 요청 URL 예시
 
 ```
-http://localhost:8082/order/getOrderInfo?mid=26&oid=7612
+https://kicoebiz.net/api/order/getOrderInfo?mid=26&oid=7612
 ```
 
 #### 응답 (200 OK)
